@@ -6,9 +6,11 @@
     "build-watch": "vue-cli-service build-watch"
   },
   "dependencies": {
+    "@ant-design/icons-vue": "^6.1.0",
+    "ant-design-vue": "^3.2.11",
     "axios": "^0.27.2",
     "core-js": "^3.8.3",
-    "vant": "^3.5.4",
+    "dayjs": "^1.11.5",
     "vue": "^3.2.13"
   },
   "devDependencies": {

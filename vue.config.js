@@ -1,6 +1,6 @@
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 const path = require("path");
-const { VantResolver } = require('unplugin-vue-components/resolvers');
+const { AntDesignVueResolver } = require('unplugin-vue-components/resolvers');
 const ComponentsPlugin = require('unplugin-vue-components/webpack');
 
 
@@ -42,7 +42,7 @@ module.exports = {
     plugins: [
         CopyWebpackPlugin(plugins),
         ComponentsPlugin({
-            resolvers: [VantResolver()],
+            resolvers: [AntDesignVueResolver()],
         }),
     ],
     devtool: 'cheap-module-source-map'

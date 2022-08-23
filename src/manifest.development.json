@@ -15,8 +15,7 @@
         "notifications",
         "storage",
         "activeTab",
-        "scripting",
-        "*://t.weather.sojson.com/*"
+        "scripting"
     ],
     "host_permissions": ["http://*/*", "https://*/*"],
     "icons": {

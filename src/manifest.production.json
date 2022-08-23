@@ -9,7 +9,7 @@
         "default_icon": "./icon.png"
     },
     "content_security_policy": {
-        "extension_pages": "script-src 'self'; object-src 'self'"
+        "extension_pages": "https://at.alicdn.com; script-src 'self'; object-src 'self'"
     },
     "permissions":[
         "notifications",
