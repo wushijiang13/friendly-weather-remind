@@ -3,10 +3,10 @@ const path = require("path");
 const { AntDesignVueResolver } = require('unplugin-vue-components/resolvers');
 const ComponentsPlugin = require('unplugin-vue-components/webpack');
 
+const PACKAGE_NAME = "friendly-weather";
 
 // Generate pages object
 const pagesObj = {};
-
 const chromeName = ["popup", "options"];
 
 chromeName.forEach(name => {
@@ -22,22 +22,23 @@ const plugins =
     ? [
         {
           from: path.resolve("src/manifest.production.json"),
-          to: `${path.resolve("dist")}/manifest.json`
+          to: `${path.resolve(PACKAGE_NAME)}/manifest.json`
         }
       ]
     : [
         {
           from: path.resolve("src/manifest.development.json"),
-          to: `${path.resolve("dist")}/manifest.json`
+          to: `${path.resolve(PACKAGE_NAME)}/manifest.json`
         }
       ];
 plugins.push({
     from: path.resolve("src/background.js"),
-    to: `${path.resolve("dist")}/background.js`
+    to: `${path.resolve(PACKAGE_NAME)}/background.js`
 })
 
 module.exports = {
   pages: pagesObj,
+  outputDir:PACKAGE_NAME,
   configureWebpack: {
     plugins: [
         CopyWebpackPlugin(plugins),

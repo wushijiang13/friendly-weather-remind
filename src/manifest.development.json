@@ -1,12 +1,12 @@
 {
     "manifest_version": 3,
-    "name": "阿江提醒你",
+    "name": "友好天气",
     "description": "友好的天气提示",
     "version": "0.0.1",
     "options_page": "options.html",
     "action": {
         "default_popup": "popup.html",
-        "default_icon": "./icon.png"
+        "default_icon": "image/icon.png"
     },
     "content_security_policy": {
         "extension_pages": "script-src 'self'; object-src 'self'"
@@ -19,10 +19,9 @@
     ],
     "host_permissions": ["http://*/*", "https://*/*"],
     "icons": {
-        "16": "/icon.png",
-        "32": "/icon.png",
-        "48": "/icon.png",
-        "128": "/icon.png"
+        "16": "image/icon.png",
+        "48": "image/icon-48.png",
+        "128": "image/icon-128.png"
     },
     "background": {
         "service_worker": "background.js",
