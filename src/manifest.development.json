@@ -13,9 +13,7 @@
     },
     "permissions":[
         "notifications",
-        "storage",
-        "activeTab",
-        "scripting"
+        "storage"
     ],
     "host_permissions": ["http://*/*", "https://*/*"],
     "icons": {

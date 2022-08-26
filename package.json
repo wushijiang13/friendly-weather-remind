@@ -3,7 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "build-watch": "vue-cli-service build-watch"
+    "build-watch": "vue-cli-service build-watch",
+    "build-zip": "node scripts/build.zip.js"
   },
   "dependencies": {
     "@ant-design/icons-vue": "^6.1.0",
@@ -11,6 +12,7 @@
     "axios": "^0.27.2",
     "core-js": "^3.8.3",
     "dayjs": "^1.11.5",
+    "jszip": "^3.10.1",
     "vue": "^3.2.13"
   },
   "devDependencies": {
