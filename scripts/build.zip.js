@@ -10,7 +10,7 @@ const PACKAGE_NAME='friendly-weather';
 //读取目录及文件
 function readDir(obj, nowPath) {
     let files = fs.readdirSync(nowPath);//读取目录中的所有文件及文件夹（同步操作）
-    files.forEach(function (fileName, index) {//遍历检测目录中的文件
+    files.forEach(function (fileName) {//遍历检测目录中的文件
         let fillPath = nowPath + "/" + fileName;
         let file = fs.statSync(fillPath);//获取一个文件的属性
         if (file.isDirectory()) {//如果是目录的话，继续查询
