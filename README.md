@@ -11,7 +11,7 @@
 通过调用高德接口，所以可以放心使用。
 
 ## 使用
-<a download href='https://github.com/wushijiang13/friendly-weather-remind/outputs/friendly-weather.zip'>下载插件</a>  
+<a download href='/wushijiang13/friendly-weather-remind/raw/main/outputs/friendly-weather.zip'>下载插件</a>  
 
 <a href='https://chrome.google.com/webstore/detail/%E5%8F%8B%E5%A5%BD%E5%A4%A9%E6%B0%94/kbmnacmdgpfkcdhnfcopcogabhhlhngm?hl=zh-CN'>插件详情</a>
 
